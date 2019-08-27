@@ -1,0 +1,5 @@
+.gclient
+.cipd
+staging
+*.tgz
+.gclient*
