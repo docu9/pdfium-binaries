@@ -3,3 +3,7 @@
 staging
 *.tgz
 .gclient*
+example/CMakeCache.txt
+example/CmakeFiles
+example/Makefile
+build
