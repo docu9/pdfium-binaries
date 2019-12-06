@@ -20,7 +20,7 @@ fi
 echo PDFium_BRANCH ${PDFium_BRANCH}
 echo CONFIGURATION ${CONFIGURATION}
 
-exit 0
+
 # PDFium_BRANCH = master | chromium/3211 | ...
 
 set -ex
