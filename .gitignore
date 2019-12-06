@@ -1,0 +1,6 @@
+.cipd
+example
+staging
+.gclient_entries
+.gclient
+pdfium-darwin-debug.tgz

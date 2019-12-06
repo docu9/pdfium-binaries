@@ -2,6 +2,25 @@
 #
 # Variables to provide:
 # CONFIGURATION = Debug | Release
+#CONFIGURATION=Debug
+#PDFium_BRANCH=master
+
+if [[ -z "${PDFium_BRANCH}" ]]; then
+  PDFium_BRANCH="master"
+  
+else
+  echo "OK 1"
+fi
+if [[ -z "${CONFIGURATION}" ]]; then
+  CONFIGURATION="Debug"
+ 
+else
+ echo "OK 2" 
+fi
+echo PDFium_BRANCH ${PDFium_BRANCH}
+echo CONFIGURATION ${CONFIGURATION}
+
+exit 0
 # PDFium_BRANCH = master | chromium/3211 | ...
 
 set -ex
