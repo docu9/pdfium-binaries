@@ -7,3 +7,10 @@ example/CMakeCache.txt
 example/CmakeFiles
 example/Makefile
 build
+.cipd
+example
+staging
+.gclient_entries
+.gclient
+pdfium-darwin-debug.tgz
+
