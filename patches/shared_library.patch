@@ -1,17 +1,17 @@
 diff --git a/BUILD.gn b/BUILD.gn
-index 42f20931a..4e063bb7c 100644
+index f27a2f4c1..95eff4106 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
-@@ -142,7 +142,7 @@ group("pdfium_public_headers") {
+@@ -140,7 +140,7 @@ group("pdfium_public_headers") {
    ]
  }
  
--jumbo_component("pdfium") {
+-component("pdfium") {
 +shared_library("pdfium") {
    libs = []
    configs += [ ":pdfium_core_config" ]
    public_configs = [ ":pdfium_public_config" ]
-@@ -182,6 +182,9 @@ jumbo_component("pdfium") {
+@@ -179,6 +179,9 @@ component("pdfium") {
        "gdi32.lib",
        "user32.lib",
      ]
@@ -22,10 +22,10 @@ index 42f20931a..4e063bb7c 100644
  
    if (is_mac) {
 diff --git a/public/fpdfview.h b/public/fpdfview.h
-index f5212599f..c337399a9 100644
+index 901d7db14..cb0a596f6 100644
 --- a/public/fpdfview.h
 +++ b/public/fpdfview.h
-@@ -154,9 +154,6 @@ typedef int FPDF_ANNOT_APPEARANCEMODE;
+@@ -175,9 +175,6 @@ typedef int FPDF_ANNOT_APPEARANCEMODE;
  // Dictionary value types.
  typedef int FPDF_OBJECT_TYPE;
  
@@ -35,7 +35,7 @@ index f5212599f..c337399a9 100644
  #if defined(WIN32)
  #if defined(FPDF_IMPLEMENTATION)
  #define FPDF_EXPORT __declspec(dllexport)
-@@ -170,9 +167,6 @@ typedef int FPDF_OBJECT_TYPE;
+@@ -191,9 +188,6 @@ typedef int FPDF_OBJECT_TYPE;
  #define FPDF_EXPORT
  #endif  // defined(FPDF_IMPLEMENTATION)
  #endif  // defined(WIN32)
