@@ -53,9 +53,10 @@ fi
 export PATH="$DepotTools_DIR:$PATH"
 
 # Clone
+if [ ! -d "$PDFium_SOURCE_DIR/base" ]; then
 gclient config --unmanaged "$PDFium_URL"
 gclient sync
-
+fi
 # Checkout
 cd "$PDFium_SOURCE_DIR"
 git checkout "${PDFium_BRANCH:-master}"
