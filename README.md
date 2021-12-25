@@ -1,6 +1,5 @@
 [![Total number of downloads](https://img.shields.io/github/downloads/bblanchon/pdfium-binaries/total.svg)](https://github.com/bblanchon/pdfium-binaries/releases)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/85rqdhpyxt589700?svg=true)](https://ci.appveyor.com/project/bblanchon/pdfium-binaries)
-[![Linux/macOS Build Status](https://travis-ci.org/bblanchon/pdfium-binaries.svg?branch=master)](https://travis-ci.org/bblanchon/pdfium-binaries)
+[![Build](https://github.com/bblanchon/pdfium-binaries/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/bblanchon/pdfium-binaries/actions/workflows/build.yml)
 
 # Pre-compiled binaries of PDFium
 
@@ -14,29 +13,71 @@ Here are the download links for latest release:
 
 <table>
   <tr>
-    <th>Platform</th>
+    <th>OS</th>
+    <th>Arch</th>
     <th>PDFium</th>
-    <th>PDFium with <a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">V8</a> and <a href="https://en.wikipedia.org/wiki/XFA">XFA</a></th>
+  </tr>
+
+  <tr>
+    <td rowspan="4">Android</td>
+    <td>x86</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-android-x86.tgz">pdfium-android-x86.tgz</a></td>
   </tr>
   <tr>
-    <td>Windows 32-bit</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-windows-x86.zip">pdfium-windows-x86.zip</a> (2 MB)</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-windows-x86-v8.zip">pdfium-windows-x86-v8.zip</a> (12 MB)</td>
+    <td>x64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-android-x64.tgz">pdfium-android-x64.tgz</a></td>
   </tr>
   <tr>
-    <td>Windows 64-bit</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-windows-x64.zip">pdfium-windows-x64.zip</a> (2 MB)</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-windows-x64-v8.zip">pdfium-windows-x64-v8.zip</a> (12 MB)</td>
+    <td>ARM</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-android-arm.tgz">pdfium-android-arm.tgz</a></td>
   </tr>
   <tr>
-    <td>Linux</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux.tgz">pdfium-linux.tgz</a> (6 MB)</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-v8.tgz">pdfium-linux-v8.tgz</a> (37 MB)</td>
+    <td>ARM64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-android-arm64.tgz">pdfium-android-arm64.tgz</a></td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">iOS</td>
+    <td>x64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-ios-x64.tgz">pdfium-ios-x64.tgz</a></td>
   </tr>
   <tr>
-    <td>macOS</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-darwin.tgz">pdfium-darwin.tgz</a> (6 MB)</td>
-    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-darwin-v8.tgz">pdfium-darwin-v8.tgz</a> (42 MB)</td>
+    <td>ARM64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-ios-arm64.tgz">pdfium-ios-arm64.tgz</a></td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">Linux</td>
+    <td>x64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-x64.tgz">pdfium-linux-x64.tgz</a></td>
+  </tr>
+  <tr>
+    <td>ARM</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-arm.tgz">pdfium-linux-arm.tgz</a></td>
+  </tr>
+  <tr>
+    <td>ARM64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-arm64.tgz">pdfium-linux-arm64.tgz</a></td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">macOS</td>
+    <td>x64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-mac-x64.tgz">pdfium-mac-x64.tgz</a></td>
+  </tr>
+  <tr>
+    <td>ARM64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-mac-arm64.tgz">pdfium-mac-arm64.tgz</a></td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">Windows</td>
+    <td>x86</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-win-x86.tgz">pdfium-win-x86.tgz</a></td>
+  </tr>
+  <tr>
+    <td>x64</td>
+    <td><a href="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-win-x64.tgz">pdfium-win-x64.tgz</a></td>
   </tr>
 </table>
 
@@ -81,10 +122,13 @@ See the following example for usage:
         FPDF_InitLibrary();
         FPDF_DestroyLibrary();
 
+### How to create macOS universal binary
+
+To  create a universial macOS binary containing both Intel and ARM code download
+both CPU versions and use the `mac_create_universal.sh` script to create a
+universal archive.
 
 
 ---
 
 This project isn't affilated with Google nor Foxit.
-
-We are very thankful to [AppVeyor](https://www.appveyor.com/) and [Travis CI](https://travis-ci.org/) for extending the build time limit, which allows us to build PDFium with V8.
